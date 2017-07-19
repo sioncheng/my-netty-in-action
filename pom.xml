@@ -7,10 +7,12 @@
 
     <groupId>com.github.sioncheng</groupId>
     <artifactId>my-netty-in-action</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
 
     <modules>
         <module>my-netty-in-action-ch5</module>
+        <module>my-netty-in-action-ch10</module>
     </modules>
 
     <dependencyManagement>

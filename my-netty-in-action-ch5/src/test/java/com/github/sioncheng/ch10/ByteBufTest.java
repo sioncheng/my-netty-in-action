@@ -1,4 +1,4 @@
-package com.github.sioncheng.ch5;
+package com.github.sioncheng.ch10;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
-import java.nio.charset.UnsupportedCharsetException;
 
 /**
  * Created by cyq on 17/07/2017.
