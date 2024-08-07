@@ -28,12 +28,16 @@ public class TestNumberMirrorEncoderWithEmbeddedChannel {
 
         Assert.assertTrue(embeddedChannel.finish());
 
-        Assert.assertEquals(-1, embeddedChannel.readOutbound());
-        Assert.assertEquals(-2, embeddedChannel.readOutbound());
-        Assert.assertEquals(0, embeddedChannel.readOutbound());
-        Assert.assertEquals(2, embeddedChannel.readOutbound());
-        Assert.assertEquals(1, embeddedChannel.readOutbound());
+        assertEqualsInt(-1, embeddedChannel.readOutbound());
+        assertEqualsInt(-2, embeddedChannel.readOutbound());
+        assertEqualsInt(0, embeddedChannel.readOutbound());
+        assertEqualsInt(2, embeddedChannel.readOutbound());
+        assertEqualsInt(1, embeddedChannel.readOutbound());
         Assert.assertNull(embeddedChannel.readOutbound());
 
+    }
+
+    private void assertEqualsInt(Integer a, Integer b) {
+        Assert.assertEquals(a, b);
     }
 }

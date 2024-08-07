@@ -13,6 +13,7 @@
     <modules>
         <module>my-netty-in-action-ch5</module>
         <module>my-netty-in-action-ch10</module>
+        <module>my-netty-in-action-ch2</module>
     </modules>
 
     <dependencyManagement>
@@ -25,7 +26,7 @@
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
-                <version>4.0.36.Final</version>
+                <version>4.1.112.Final</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
